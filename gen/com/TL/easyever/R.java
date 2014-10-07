@@ -28,31 +28,35 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_search=0x7f0a000e;
-        public static final int action_settings=0x7f0a000d;
-        public static final int esdk__switch_service=0x7f0a000c;
-        public static final int esdk__webview=0x7f0a0000;
-        public static final int form=0x7f0a0008;
-        public static final int image=0x7f0a0001;
-        public static final int image_button_wrapper=0x7f0a0002;
-        public static final int list=0x7f0a0005;
-        public static final int login=0x7f0a0006;
-        public static final int logout=0x7f0a0007;
-        public static final int save_button=0x7f0a0004;
-        public static final int search_results_parent=0x7f0a0009;
-        public static final int select_button=0x7f0a0003;
-        public static final int text_content=0x7f0a000b;
-        public static final int text_title=0x7f0a000a;
+        public static final int action_search=0x7f0a0011;
+        public static final int action_settings=0x7f0a0010;
+        public static final int button1=0x7f0a0001;
+        public static final int button2=0x7f0a0002;
+        public static final int editText1=0x7f0a0000;
+        public static final int esdk__switch_service=0x7f0a000f;
+        public static final int esdk__webview=0x7f0a0003;
+        public static final int form=0x7f0a000b;
+        public static final int image=0x7f0a0004;
+        public static final int image_button_wrapper=0x7f0a0005;
+        public static final int list=0x7f0a0008;
+        public static final int login=0x7f0a0009;
+        public static final int logout=0x7f0a000a;
+        public static final int save_button=0x7f0a0007;
+        public static final int search_results_parent=0x7f0a000c;
+        public static final int select_button=0x7f0a0006;
+        public static final int text_content=0x7f0a000e;
+        public static final int text_title=0x7f0a000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int esdk__webview=0x7f030001;
-        public static final int home=0x7f030002;
-        public static final int image_picker=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int search_form=0x7f030005;
-        public static final int search_notes=0x7f030006;
-        public static final int simple_note=0x7f030007;
+        public static final int editnote=0x7f030001;
+        public static final int esdk__webview=0x7f030002;
+        public static final int home=0x7f030003;
+        public static final int image_picker=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int search_form=0x7f030006;
+        public static final int search_notes=0x7f030007;
+        public static final int simple_note=0x7f030008;
     }
     public static final class menu {
         public static final int esdk__oauth=0x7f090000;
@@ -65,6 +69,7 @@ public final class R {
         public static final int ERROR_GETTING_LINKED_NOTEBOOK=0x7f07002b;
         public static final int action_settings=0x7f070002;
         public static final int app_name=0x7f070000;
+        public static final int cancel=0x7f07002d;
         public static final int content=0x7f07001c;
         public static final int empty_content_error=0x7f07001d;
         public static final int err_creating_note=0x7f07000a;
@@ -100,6 +105,7 @@ public final class R {
         public static final int note_saved=0x7f07001e;
         public static final int notes_searched=0x7f07001f;
         public static final int ok=0x7f070020;
+        public static final int save=0x7f07002c;
         public static final int search_hint=0x7f070024;
         public static final int search_notes=0x7f070023;
         public static final int simple_note=0x7f070021;
