@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+/**
+ * 最开始的界面，输入密码和启动界面的窗口
+ * @author Troy Liu
+ * @version 2014-10-7  上午8:49:45
+ */
 
 public class MainActivity extends Activity {
 
