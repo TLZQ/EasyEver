@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textMultiLine" >
-
+        android:hint="你又要记些什么啊？=_=#"
         <requestFocus />
     </EditText>
 
