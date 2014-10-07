@@ -24,6 +24,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.TL.easyever.client.android.EvernoteOAuthActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.TL.easyever.ImagePicker"
+            android:label="@string/image_picker"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.TL.easyever.SimpleNote"
+            android:label="@string/simple_note" />
+        <activity
+            android:name="com.TL.easyever.SearchNotes"
+            android:label="@string/search_notes">
+                <intent-filter>
+                     <action android:name="android.intent.action.SEARCH" />
+                </intent-filter>
+                <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity 
+            android:name="com.TL.easyever.ParentActivity"
+            android:configChanges="orientation|keyboardHidden"/>
     </application>
 
 </manifest>
