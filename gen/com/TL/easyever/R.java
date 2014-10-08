@@ -25,13 +25,14 @@ public final class R {
         public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int action_search=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_search=0x7f0a0011;
+        public static final int action_search=0x7f0a0012;
         public static final int action_settings=0x7f0a0010;
-        public static final int button1=0x7f0a0001;
-        public static final int button2=0x7f0a0002;
+        public static final int button1=0x7f0a0002;
+        public static final int button2=0x7f0a0001;
         public static final int editText1=0x7f0a0000;
         public static final int esdk__switch_service=0x7f0a000f;
         public static final int esdk__webview=0x7f0a0003;
@@ -41,6 +42,7 @@ public final class R {
         public static final int list=0x7f0a0008;
         public static final int login=0x7f0a0009;
         public static final int logout=0x7f0a000a;
+        public static final int menu_search=0x7f0a0011;
         public static final int save_button=0x7f0a0007;
         public static final int search_results_parent=0x7f0a000c;
         public static final int select_button=0x7f0a0006;
@@ -100,12 +102,14 @@ public final class R {
         public static final int label_search=0x7f070016;
         public static final int label_select_button=0x7f07000d;
         public static final int label_select_notebook_button=0x7f07001a;
+        public static final int login=0x7f07002e;
         public static final int msg_image_saved=0x7f07000b;
         public static final int msg_retrieved_resource=0x7f070012;
         public static final int note_saved=0x7f07001e;
         public static final int notes_searched=0x7f07001f;
         public static final int ok=0x7f070020;
         public static final int save=0x7f07002c;
+        public static final int search=0x7f07002f;
         public static final int search_hint=0x7f070024;
         public static final int search_notes=0x7f070023;
         public static final int simple_note=0x7f070021;
