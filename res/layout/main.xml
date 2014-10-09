@@ -19,7 +19,7 @@
         android:background="#cccccccc"
         android:padding="3dp">
 
-        <Button
+<!-- 	    <Button
             android:id="@+id/login"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
@@ -33,6 +33,6 @@
             android:layout_width="0dp"
             android:text="@string/label_logout"
             android:onClick="logout"
-            android:layout_weight="1" />
+            android:layout_weight="1" />    -->
     </LinearLayout>
 </LinearLayout>

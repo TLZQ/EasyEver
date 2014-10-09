@@ -53,8 +53,8 @@ public class MainActivity extends ParentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        mLoginButton = (Button) findViewById(R.id.login);
-        mLogoutButton = (Button) findViewById(R.id.logout);
+/*        mLoginButton = (Button) findViewById(R.id.login);
+        mLogoutButton = (Button) findViewById(R.id.logout);    */
         mListView = (ListView) findViewById(R.id.list);
         mAdapter = new ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_1,
@@ -65,16 +65,12 @@ public class MainActivity extends ParentActivity {
         mListView.setOnItemClickListener(mItemClickListener);
     }
     
-    @Override
-    public void onResume() {
-      super.onResume();
-      updateAuthUi();
-    }
+    
 
     /**
      * Update the UI based on Evernote authentication state.
      */
-    private void updateAuthUi() {
+/*	private void updateAuthUi() {
       //show login button if logged out
       mLoginButton.setEnabled(!mEvernoteSession.isLoggedIn());
 
@@ -83,14 +79,14 @@ public class MainActivity extends ParentActivity {
 
       //disable clickable elements until logged in
       mListView.setEnabled(mEvernoteSession.isLoggedIn());
-    }
+    }     */     
 
     /**
      * Called when the user taps the "Log in to Evernote" button.
      * Initiates the Evernote OAuth process
      */
 
-    public void login(View view) {
+    public void login() {
       mEvernoteSession.authenticate(this);
     }
 
@@ -104,7 +100,7 @@ public class MainActivity extends ParentActivity {
       } catch (InvalidAuthenticationException e) {
         Log.e(LOGTAG, "Tried to call logout with not logged in", e);
       }
-      updateAuthUi();
+/*      updateAuthUi();   */
     }
 
     /**
@@ -117,7 +113,7 @@ public class MainActivity extends ParentActivity {
         //Update UI when oauth activity returns result
         case EvernoteSession.REQUEST_CODE_OAUTH:
           if (resultCode == Activity.RESULT_OK) {
-            updateAuthUi();
+/*            updateAuthUi();    */
           }
           break;
       }
@@ -127,7 +123,7 @@ public class MainActivity extends ParentActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+		return true;
     }
 
     @Override
@@ -138,7 +134,10 @@ public class MainActivity extends ParentActivity {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
+        }else if(id == R.id.login){
+        	this.login();
         }
         return super.onOptionsItemSelected(item);
+        
     }
 }
