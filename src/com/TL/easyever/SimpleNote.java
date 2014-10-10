@@ -65,13 +65,15 @@ public class SimpleNote extends ParentActivity {
 
   // Callback used as a result of creating a note in a normal notebook or a linked notebook
   private OnClientCallback<Note> mNoteCreateCallback = new OnClientCallback<Note>() {
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void onSuccess(Note note) {
       Toast.makeText(getApplicationContext(), R.string.note_saved, Toast.LENGTH_LONG).show();
       removeDialog(DIALOG_PROGRESS);
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void onException(Exception exception) {
       Log.e(LOGTAG, "Error saving note", exception);
       Toast.makeText(getApplicationContext(), R.string.error_saving_note, Toast.LENGTH_LONG).show();

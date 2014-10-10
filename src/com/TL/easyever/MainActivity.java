@@ -1,5 +1,6 @@
 package com.TL.easyever;
 
+import com.TL.easyever.R.menu;
 import com.TL.easyever.client.android.EvernoteSession;
 import com.TL.easyever.client.android.InvalidAuthenticationException;
 
@@ -9,10 +10,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.AnimationSet;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 /**
  * 最开始的界面，输入密码和启动界面的窗口
@@ -25,44 +31,33 @@ public class MainActivity extends ParentActivity {
 	// Name of this application, for logging
 	private static final String LOGTAG = "HelloEDAM";
 	
-	// UI elements that we update
-	private Button mLoginButton;
-	private Button mLogoutButton;
-	private ListView mListView;
-	private ArrayAdapter mAdapter;
+	final int LOGIN_BUTTON = 1;
 	
-	//Listener to act on clicks
-	  private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
-	    @Override
-	    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-	      switch(position) {
-	        case 0:
-	          startActivity(new Intent(getApplicationContext(), ImagePicker.class));
-	          break;
-	        case 1:
-	          startActivity(new Intent(getApplicationContext(), SimpleNote.class));
-	          break;
-	        case 2:
-	          startActivity(new Intent(getApplicationContext(), SearchNotes.class));
-	      }
-	    }
-	  };
+	private ListView mListView;
+	private ImageButton loginButton;
+	
+	
 	
     @Override
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.home);
         
-/*        mLoginButton = (Button) findViewById(R.id.login);
-        mLogoutButton = (Button) findViewById(R.id.logout);    */
-        mListView = (ListView) findViewById(R.id.list);
-        mAdapter = new ArrayAdapter<String>(this,
-            android.R.layout.simple_list_item_1,
-            android.R.id.text1,
-            getResources().getStringArray(R.array.esdk__main_list));
-
-        mListView.setAdapter(mAdapter);
-        mListView.setOnItemClickListener(mItemClickListener);
+        loginButton = (ImageButton) findViewById(R.id.imageButton1);
+        loginButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				AnimationSet animationSet = new AnimationSet(true);
+				AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
+				alphaAnimation.setDuration(500);
+				animationSet.addAnimation(alphaAnimation);
+				loginButton.startAnimation(animationSet);
+				Intent intent = new Intent(MainActivity.this, SimpleNote.class);
+				startActivity(intent);
+			}
+		});
     }
     
     
@@ -119,11 +114,16 @@ public class MainActivity extends ParentActivity {
       }
     }
 
+   
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+        if (!mEvernoteSession.isLoggedIn()){
+        	menu.add(0, LOGIN_BUTTON, 0, "登陆");
+        }
+        return true;
     }
 
     @Override
@@ -134,9 +134,11 @@ public class MainActivity extends ParentActivity {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
-        }else if(id == R.id.login){
-        	this.login();
+        }else if (id == LOGIN_BUTTON){
+        	login();
+        	item.setVisible(false);
         }
+        
         return super.onOptionsItemSelected(item);
         
     }

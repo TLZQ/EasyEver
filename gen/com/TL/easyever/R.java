@@ -8,8 +8,12 @@
 package com.TL.easyever;
 
 public final class R {
+    public static final class anim {
+        public static final int addnote=0x7f040000;
+        public static final int addnote_press=0x7f040001;
+    }
     public static final class array {
-        public static final int esdk__main_list=0x7f050000;
+        public static final int esdk__main_list=0x7f060000;
     }
     public static final class attr {
     }
@@ -21,32 +25,35 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
         public static final int action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int addnote_normal=0x7f020001;
+        public static final int addnote_press=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int action_search=0x7f0a0011;
-        public static final int action_settings=0x7f0a000e;
-        public static final int button1=0x7f0a0002;
-        public static final int button2=0x7f0a0001;
-        public static final int editText1=0x7f0a0000;
-        public static final int esdk__switch_service=0x7f0a000d;
-        public static final int esdk__webview=0x7f0a0003;
-        public static final int form=0x7f0a0009;
-        public static final int image=0x7f0a0004;
-        public static final int image_button_wrapper=0x7f0a0005;
-        public static final int list=0x7f0a0008;
-        public static final int login=0x7f0a0010;
-        public static final int menu_search=0x7f0a000f;
-        public static final int save_button=0x7f0a0007;
-        public static final int search_results_parent=0x7f0a000a;
-        public static final int select_button=0x7f0a0006;
-        public static final int text_content=0x7f0a000c;
-        public static final int text_title=0x7f0a000b;
+        public static final int action_search=0x7f0b0012;
+        public static final int action_settings=0x7f0b0010;
+        public static final int button1=0x7f0b0002;
+        public static final int button2=0x7f0b0001;
+        public static final int editText1=0x7f0b0000;
+        public static final int esdk__switch_service=0x7f0b000f;
+        public static final int esdk__webview=0x7f0b0003;
+        public static final int form=0x7f0b000b;
+        public static final int image=0x7f0b0006;
+        public static final int imageButton1=0x7f0b0005;
+        public static final int image_button_wrapper=0x7f0b0007;
+        public static final int list=0x7f0b000a;
+        public static final int menu_search=0x7f0b0011;
+        public static final int save_button=0x7f0b0009;
+        public static final int scrollView1=0x7f0b0004;
+        public static final int search_results_parent=0x7f0b000c;
+        public static final int select_button=0x7f0b0008;
+        public static final int text_content=0x7f0b000e;
+        public static final int text_title=0x7f0b000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -60,59 +67,59 @@ public final class R {
         public static final int simple_note=0x7f030008;
     }
     public static final class menu {
-        public static final int esdk__oauth=0x7f090000;
-        public static final int main=0x7f090001;
-        public static final int options_menu=0x7f090002;
+        public static final int esdk__oauth=0x7f0a0000;
+        public static final int main=0x7f0a0001;
+        public static final int options_menu=0x7f0a0002;
     }
     public static final class string {
-        public static final int CANNOT_GET_LINKED_NOTEBOOK=0x7f070029;
-        public static final int CANT_LIST_APP_LNB=0x7f07002a;
-        public static final int ERROR_GETTING_LINKED_NOTEBOOK=0x7f07002b;
-        public static final int action_settings=0x7f070002;
-        public static final int app_name=0x7f070000;
-        public static final int cancel=0x7f07002d;
-        public static final int content=0x7f07001c;
-        public static final int empty_content_error=0x7f07001d;
-        public static final int err_creating_note=0x7f07000a;
-        public static final int err_image_selected=0x7f070010;
-        public static final int err_retrieving_resource=0x7f070011;
-        public static final int error_creating_notestore=0x7f070026;
-        public static final int error_listing_notebooks=0x7f070025;
-        public static final int error_listing_notes=0x7f070028;
-        public static final int error_saving_note=0x7f070027;
-        public static final int esdk__err_api_setup=0x7f070008;
-        public static final int esdk__err_authentication=0x7f070007;
-        public static final int esdk__err_protocol_version=0x7f070006;
-        public static final int esdk__evernote=0x7f070003;
-        public static final int esdk__evernote_login_failed=0x7f070004;
-        public static final int esdk__evernote_login_successful=0x7f070005;
-        public static final int esdk__image_picker=0x7f070017;
-        public static final int esdk__loading=0x7f070009;
-        public static final int esdk__pick_notebook=0x7f070013;
-        public static final int esdk__search_notes=0x7f070019;
-        public static final int esdk__simple_note=0x7f070018;
-        public static final int hello_world=0x7f070001;
-        public static final int image_picker=0x7f070022;
-        public static final int label_app_title=0x7f07000c;
-        public static final int label_login=0x7f070014;
-        public static final int label_logout=0x7f070015;
-        public static final int label_message=0x7f07000e;
-        public static final int label_save_button=0x7f07000f;
-        public static final int label_search=0x7f070016;
-        public static final int label_select_button=0x7f07000d;
-        public static final int label_select_notebook_button=0x7f07001a;
-        public static final int login=0x7f07002e;
-        public static final int msg_image_saved=0x7f07000b;
-        public static final int msg_retrieved_resource=0x7f070012;
-        public static final int note_saved=0x7f07001e;
-        public static final int notes_searched=0x7f07001f;
-        public static final int ok=0x7f070020;
-        public static final int save=0x7f07002c;
-        public static final int search=0x7f07002f;
-        public static final int search_hint=0x7f070024;
-        public static final int search_notes=0x7f070023;
-        public static final int simple_note=0x7f070021;
-        public static final int title=0x7f07001b;
+        public static final int CANNOT_GET_LINKED_NOTEBOOK=0x7f080029;
+        public static final int CANT_LIST_APP_LNB=0x7f08002a;
+        public static final int ERROR_GETTING_LINKED_NOTEBOOK=0x7f08002b;
+        public static final int action_settings=0x7f080002;
+        public static final int app_name=0x7f080000;
+        public static final int cancel=0x7f08002d;
+        public static final int content=0x7f08001c;
+        public static final int empty_content_error=0x7f08001d;
+        public static final int err_creating_note=0x7f08000a;
+        public static final int err_image_selected=0x7f080010;
+        public static final int err_retrieving_resource=0x7f080011;
+        public static final int error_creating_notestore=0x7f080026;
+        public static final int error_listing_notebooks=0x7f080025;
+        public static final int error_listing_notes=0x7f080028;
+        public static final int error_saving_note=0x7f080027;
+        public static final int esdk__err_api_setup=0x7f080008;
+        public static final int esdk__err_authentication=0x7f080007;
+        public static final int esdk__err_protocol_version=0x7f080006;
+        public static final int esdk__evernote=0x7f080003;
+        public static final int esdk__evernote_login_failed=0x7f080004;
+        public static final int esdk__evernote_login_successful=0x7f080005;
+        public static final int esdk__image_picker=0x7f080017;
+        public static final int esdk__loading=0x7f080009;
+        public static final int esdk__pick_notebook=0x7f080013;
+        public static final int esdk__search_notes=0x7f080019;
+        public static final int esdk__simple_note=0x7f080018;
+        public static final int hello_world=0x7f080001;
+        public static final int image_picker=0x7f080022;
+        public static final int label_app_title=0x7f08000c;
+        public static final int label_login=0x7f080014;
+        public static final int label_logout=0x7f080015;
+        public static final int label_message=0x7f08000e;
+        public static final int label_save_button=0x7f08000f;
+        public static final int label_search=0x7f080016;
+        public static final int label_select_button=0x7f08000d;
+        public static final int label_select_notebook_button=0x7f08001a;
+        public static final int login=0x7f08002e;
+        public static final int msg_image_saved=0x7f08000b;
+        public static final int msg_retrieved_resource=0x7f080012;
+        public static final int note_saved=0x7f08001e;
+        public static final int notes_searched=0x7f08001f;
+        public static final int ok=0x7f080020;
+        public static final int save=0x7f08002c;
+        public static final int search=0x7f08002f;
+        public static final int search_hint=0x7f080024;
+        public static final int search_notes=0x7f080023;
+        public static final int simple_note=0x7f080021;
+        public static final int title=0x7f08001b;
     }
     public static final class style {
         /** 
@@ -136,13 +143,13 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f090001;
     }
     public static final class xml {
-        public static final int searchable=0x7f040000;
+        public static final int searchable=0x7f050000;
     }
 }

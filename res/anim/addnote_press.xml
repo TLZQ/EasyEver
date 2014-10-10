@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!-- 这个是引导界面的登录按钮按下时的效果 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+  
+    <item 
+        android:drawable="@drawable/addnote_normal" 
+        android:state_focused="true" 
+        android:state_pressed="false"
+        android:duration="900"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:interpolator="@android:anim/accelerate_interpolator" />  
+   
+    
+</selector>  
